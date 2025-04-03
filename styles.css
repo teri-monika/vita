@@ -1,3 +1,4 @@
+/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -31,78 +32,40 @@ nav ul li a {
     font-size: 18px;
 }
 
-#hero {
-    background: #007bff;
-    color: white;
-    text-align: center;
-    padding: 50px 0;
+/* Dropdown menu styles */
+nav ul li.dropdown {
+    position: relative;
 }
 
-#hero h1 {
-    font-size: 48px;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-section {
-    padding: 50px 0;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.project {
-    background: #f4f4f4;
-    margin-bottom: 20px;
-    padding: 20px;
+nav ul li.dropdown .dropdown-content {
+    display: none;  /* Hide the dropdown by default */
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
     border-radius: 5px;
 }
 
-.project h3 {
-    margin-bottom: 10px;
-}
-
-#contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#contact form label {
-    margin-bottom: 5px;
-}
-
-#contact form input,
-#contact form textarea {
+nav ul li.dropdown .dropdown-content li {
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    text-align: left;
 }
 
-#contact form button {
-    padding: 10px;
-    background: #007bff;
+nav ul li.dropdown .dropdown-content li a {
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    text-decoration: none;
 }
 
-#contact form button:hover {
-    background: #0056b3;
+nav ul li.dropdown:hover .dropdown-content {
+    display: block;  /* Show the dropdown on hover */
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+/* Hover effect */
+nav ul li a:hover, nav ul li.dropdown:hover > a {
+    background-color: #555;
+}
+
+/* JavaScript-driven dropdown */
+nav ul li.dropdown .dropdown-content.show {
+    display: block;
 }
