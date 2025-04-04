@@ -172,8 +172,3 @@ nav ul li.dropdown:hover .dropdown-content {
 nav ul li a:hover, nav ul li.dropdown:hover > a {
     background-color: #555;
 }
-
-/* JavaScript-driven dropdown */
-nav ul li.dropdown .dropdown-content.show {
-    display: block;
-}
