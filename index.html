@@ -15,11 +15,13 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li class="dropdown">
-                <a href="#">More</a>
-                <ul class="dropdown-content">
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#blog">Blog</a></li>
+                    <a href="#">More</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -76,34 +78,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Teri Monika. All rights reserved.</p>
+            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
         </div>
     </footer>
-<script>
-    // Get all dropdown elements
-    const dropdowns = document.querySelectorAll('.dropdown');
-
-    // Add a click event to toggle the dropdown visibility
-    dropdowns.forEach(dropdown => {
-        dropdown.addEventListener('click', function(e) {
-            // Prevent link from navigating
-            e.preventDefault();
-
-            // Toggle the 'show' class to control visibility
-            const dropdownContent = dropdown.querySelector('.dropdown-content');
-            dropdownContent.classList.toggle('show');
-        });
-    });
-
-    // Close dropdown if user clicks outside
-    window.addEventListener('click', function(e) {
-        if (!e.target.matches('.dropdown a')) {
-            dropdowns.forEach(dropdown => {
-                const dropdownContent = dropdown.querySelector('.dropdown-content');
-                dropdownContent.classList.remove('show');
-            });
-        }
-    });
-</script>
 </body>
 </html>
