@@ -19,15 +19,15 @@ nav {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  position: fixed;      /* Keeps the sidebar fixed on the left side */
-  top: 0;              /* Aligns it to the top */
-  left: 0;             /* Aligns it to the left side */
-  height: 100%;        /* Ensures the sidebar takes up the full height */
-  width: 60px;         /* Set width of the sidebar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 60px; /* Sidebar width */
   background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-  display: flex;       /* Enables flexbox for vertical alignment */
-  flex-direction: column; /* Items stacked vertically */
-  justify-content: center; /* Centers the icons vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* List items inside the sidebar */
@@ -36,9 +36,10 @@ nav ul li {
   text-align: center;   /* Centers the icons within the list items */
 }
 
+/* Icon styles */
 nav ul li a {
   text-decoration: none; /* Removes underline */
-  color: white;          /* Icon color */
+  color: white;          /* Icon color (white for visibility) */
   font-size: 30px;       /* Icon size */
   display: block;        /* Makes the anchor a block element */
   padding: 15px;         /* Adds padding around the icons */
@@ -50,10 +51,10 @@ nav ul li a:hover {
   color: #f39c12;  /* Changes color on hover */
 }
 
-/* Content section that is offset by the sidebar */
-.content {
-  margin-left: 80px;  /* Adds space for the sidebar */
-  padding: 20px;      /* Adds padding to the content */
+/* Add visibility to icons */
+nav ul li a i {
+  opacity: 1 !important; /* Ensure icons are visible */
+  color: white !important; /* Force icons to be white */
 }
 
 .profile-img {
