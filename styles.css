@@ -39,7 +39,6 @@ nav ul li {
 /* Icon styles */
 nav ul li a {
   text-decoration: none; /* Removes underline */
-  color: none;          /* Icon color (white for visibility) */
   font-size: 30px;       /* Icon size */
   display: block;        /* Makes the anchor a block element */
   padding: 15px;         /* Adds padding around the icons */
