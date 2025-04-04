@@ -26,22 +26,26 @@ header {
 }
 
 nav ul {
-    display: flex;
-    list-style-type: none;
-    text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+  margin-right: 20px; 
 }
 
 nav ul li a {
-    color: #145a32;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: verdana, sans-serif;
+  text-decoration: none; /* Removes the underline from links */
+  color: white; /* Icon color */
+  font-size: 24px; /* Icon size */
 }
+
+nav ul li a:hover {
+  color: #ffffff; /* Icon color on hover */
+}
+
 
 .profile-img {
     width: 150px;
