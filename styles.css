@@ -15,10 +15,12 @@ body {
 }
 
 header {
-    background: #d6dbdf;
+    background: #DAF7A6;
     position: fixed;
     color: white;
     padding: 10px 0;
+    z-index: 1000;
+    text-align: center;
 }
 
 nav ul {
@@ -35,6 +37,14 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
 /* Hero section styles */
