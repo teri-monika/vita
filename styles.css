@@ -70,6 +70,9 @@ nav ul li a:hover, nav ul li.dropdown:hover > a {
     background-image: url('images/hero-background.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh; 
     color: white;
     text-align: center;
     padding: 50px 0;
