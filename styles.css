@@ -67,12 +67,12 @@ nav ul li a:hover, nav ul li.dropdown:hover > a {
 
 /* Hero section styles */
 #hero {
-    background-image: url('images/hero-background.jpg');
+    background-image: url(https://image.freepik.com/free-photo/white-simple-textured-design-background_53876-102423.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: repeat;
     margin: 0;
-    height: 100vh; 
     color: white;
     text-align: center;
     padding: 50px 0;
