@@ -14,48 +14,46 @@ body {
     height: 100vh;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #DAF7A6;
-    position: fixed;
-    padding: 10px 0;
-    z-index: 1000;   
-}
-
-nav ul {
-  list-style-type: none;  /* Removes bullet points */
-  padding: 0;             /* Removes padding */
-  margin: 0;              /* Removes margin */
-  position: fixed;        /* Fixes the navigation to the left side */
-  top: 0;                 /* Aligns it to the top */
-  left: 0;                /* Aligns it to the left side of the screen */
-  height: 100%;           /* Makes the nav take up the entire height of the screen */
-  width: 60px;            /* Set a width for the sidebar */
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency */
-  display: flex;          /* Enables flexbox for alignment */
-  flex-direction: column; /* Aligns the items vertically */
+/* Sidebar */
+nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;      /* Keeps the sidebar fixed on the left side */
+  top: 0;              /* Aligns it to the top */
+  left: 0;             /* Aligns it to the left side */
+  height: 100%;        /* Ensures the sidebar takes up the full height */
+  width: 60px;         /* Set width of the sidebar */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  display: flex;       /* Enables flexbox for vertical alignment */
+  flex-direction: column; /* Items stacked vertically */
   justify-content: center; /* Centers the icons vertically */
 }
 
+/* List items inside the sidebar */
 nav ul li {
-  margin-bottom: 20px; /* Adds space between each icon */
-  text-align: center;  /* Centers the icons within the list items */
+  margin-bottom: 20px;  /* Space between icons */
+  text-align: center;   /* Centers the icons within the list items */
 }
 
 nav ul li a {
-  text-decoration: none; /* Removes the underline */
+  text-decoration: none; /* Removes underline */
   color: white;          /* Icon color */
   font-size: 30px;       /* Icon size */
-  display: block;        /* Makes the anchor tag a block element */
-  padding: 15px;         /* Adds padding around the icon */
-  transition: color 0.3s ease; /* Adds smooth transition on hover */
+  display: block;        /* Makes the anchor a block element */
+  padding: 15px;         /* Adds padding around the icons */
+  transition: color 0.3s ease; /* Smooth transition on hover */
 }
 
-/* Change icon color on hover */
+/* Hover effect for icons */
 nav ul li a:hover {
-  color: #f39c12;  /* Color change on hover */
+  color: #f39c12;  /* Changes color on hover */
+}
+
+/* Content section that is offset by the sidebar */
+.content {
+  margin-left: 80px;  /* Adds space for the sidebar */
+  padding: 20px;      /* Adds padding to the content */
 }
 
 .profile-img {
