@@ -21,31 +21,42 @@ header {
     background-color: #DAF7A6;
     position: fixed;
     padding: 10px 0;
-    z-index: 1000;
-    
+    z-index: 1000;   
 }
 
 nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex; 
+  list-style-type: none;  /* Removes bullet points */
+  padding: 0;             /* Removes padding */
+  margin: 0;              /* Removes margin */
+  position: fixed;        /* Fixes the navigation to the left side */
+  top: 0;                 /* Aligns it to the top */
+  left: 0;                /* Aligns it to the left side of the screen */
+  height: 100%;           /* Makes the nav take up the entire height of the screen */
+  width: 60px;            /* Set a width for the sidebar */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency */
+  display: flex;          /* Enables flexbox for alignment */
+  flex-direction: column; /* Aligns the items vertically */
+  justify-content: center; /* Centers the icons vertically */
 }
 
 nav ul li {
-  margin-right: 20px; 
+  margin-bottom: 20px; /* Adds space between each icon */
+  text-align: center;  /* Centers the icons within the list items */
 }
 
 nav ul li a {
-  text-decoration: none; /* Removes the underline from links */
-  color: white; /* Icon color */
-  font-size: 24px; /* Icon size */
+  text-decoration: none; /* Removes the underline */
+  color: white;          /* Icon color */
+  font-size: 30px;       /* Icon size */
+  display: block;        /* Makes the anchor tag a block element */
+  padding: 15px;         /* Adds padding around the icon */
+  transition: color 0.3s ease; /* Adds smooth transition on hover */
 }
 
+/* Change icon color on hover */
 nav ul li a:hover {
-  color: #ffffff; /* Icon color on hover */
+  color: #f39c12;  /* Color change on hover */
 }
-
 
 .profile-img {
     width: 150px;
