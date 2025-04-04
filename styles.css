@@ -39,22 +39,11 @@ nav ul li {
 /* Icon styles */
 nav ul li a {
   text-decoration: none; /* Removes underline */
-  color: white;          /* Icon color (white for visibility) */
+  color: none;          /* Icon color (white for visibility) */
   font-size: 30px;       /* Icon size */
   display: block;        /* Makes the anchor a block element */
   padding: 15px;         /* Adds padding around the icons */
   transition: color 0.3s ease; /* Smooth transition on hover */
-}
-
-/* Hover effect for icons */
-nav ul li a:hover {
-  color: #f39c12;  /* Changes color on hover */
-}
-
-/* Add visibility to icons */
-nav ul li a i {
-  opacity: 1 !important; /* Ensure icons are visible */
-  color: white !important; /* Force icons to be white */
 }
 
 .profile-img {
