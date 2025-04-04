@@ -138,8 +138,17 @@ h2 {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
     background: #333;
     color: white;
-    text-align: center;
     padding: 10px 0;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+body {
+  margin-bottom: 40px;
 }
