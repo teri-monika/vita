@@ -38,7 +38,8 @@ nav ul li a {
     background-image:url(https://image.freepik.com/free-photo/white-simple-textured-design-background_53876-102423.jpg);
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: repeat;}
+    background-repeat: repeat;
+    height: 100vh;}
 }
 
 #hero h1 {
